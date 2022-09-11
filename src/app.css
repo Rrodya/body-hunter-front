@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #050505;
+.title {
+    color: #000000;
+}
+
+.button-link {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
 }
 
 #app {

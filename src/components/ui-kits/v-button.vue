@@ -22,17 +22,22 @@ export default class VButton extends Vue {
 
 <style scoped>
  .v-button {
-   padding: 20px 30px;
-   background-color: transparent;
+   padding: 10px 30px;
+   background-color: #ffffff;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
    outline: none;
-   border: 1px solid #ffffff;
-   color: #ffffff;
+   border: none;
+   border-radius: 10px;
    transition: all .2s ease;
    cursor: pointer;
+   color: #363635;
+   font-weight: 500;
+   font-family: Avenir, Helvetica, Arial, sans-serif;
+
  }
 
  .v-button:hover {
-   background-color: #ffffff;
-   color: #000000;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
+   transform: scale(1.2);
  }
 </style>

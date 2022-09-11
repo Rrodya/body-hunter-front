@@ -9,3 +9,8 @@ export interface registerType {
     password: string | null,
     name: string | null,
 }
+
+export interface loginData {
+    email: string | null,
+    password: string | null
+}

@@ -1,4 +1,4 @@
 import {Component, Vue} from "vue-property-decorator";
 
 @Component
-export default class MainPage extends Vue {}
+export default class HomeMain extends Vue {}

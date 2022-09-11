@@ -9,26 +9,21 @@ import App from "@/App.vue";
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
+
   {
-    path: '/',
-    component: App,
-    children: [
-      {
-        path: '',
-        name: 'start',
-        component: MainPage
-      },
-      {
-        path: '/login',
-        name: 'login',
-        component: Login
-      },
-      {
-        path: '/register',
-        name: 'register',
-        component: () => import("@/views/register/register-page.vue")
-      }
-    ]
+    path: '',
+    name: 'start',
+    component: MainPage
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: () => import("@/views/register/register-page.vue")
   },
   {
     path: "/homepage",
@@ -37,7 +32,7 @@ const routes: Array<RouteConfig> = [
       {
         path: '',
         name: "homepage",
-        component: () => import("@/views/main-page/main-page.vue")
+        component: () => import("@/views/home-main/home-main.vue")
       }
     ]
   }

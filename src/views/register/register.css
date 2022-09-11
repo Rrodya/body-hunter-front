@@ -1,6 +1,9 @@
 .register {
     margin-top: 200px;
 }
+.register-page__title {
+    padding-bottom: 20px
+}
 
 .register-form {
     display: flex;
@@ -12,14 +15,17 @@
 
 .register-form__input {
     width: 100%;
+    margin-top: 10px;
 }
 
+
+
 .register-form__submit {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .register-form__message-valid {
     font-size: 12px;
     color: #e71b1b;
-    margin-top: 10px;
+    margin-top: 20px;
 }
