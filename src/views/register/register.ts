@@ -22,7 +22,9 @@ export default class Register extends Vue {
     goRegister(){
         sendReq('users', 'post', this.registerData).then(res => {
             if(res.message === "ok"){
-                console.log('register success');
+                console.log("register success");
+                localStorage.bh_token = res.token;
+                this.$router.push({name: "homepage"});
             } else if(res.message === "email"){
                 this.messageValid = "Данный email уже существует";
             }
